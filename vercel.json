@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "dist" } }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/webhook.js" },
+    { "src": "/(.*)",     "dest": "/index.html"     }
+  ],
+  "env": {
+    "WHATSAPP_TOKEN":           "@whatsapp_token",
+    "WHATSAPP_PHONE_NUMBER_ID": "@whatsapp_phone_number_id",
+    "WHATSAPP_VERIFY_TOKEN":    "@whatsapp_verify_token",
+    "ADMIN_WHATSAPP":           "@admin_whatsapp"
+  }
+}
