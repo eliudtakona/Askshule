@@ -15,12 +15,12 @@ export default function BotDemo() {
         padding: '14px 28px', display: 'inline-block', fontWeight: 700,
         fontSize: 14, cursor: 'pointer'
       }}
-        onClick={() => window.open('https://wa.me/254703931032', '_blank')}
+        onClick={() => window.open('https://wa.me/254708908098', '_blank')}
       >
         💬 Chat With Us on WhatsApp
       </div>
       <div style={{ marginTop: 16, fontSize: 12, color: '#999' }}>
-        +254 703 931032 · Available 24/7
+        +254 708908098 · Available 24/7
       </div>
     </div>
   )
