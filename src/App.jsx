@@ -1,20 +1,23 @@
 import { Routes, Route } from 'react-router-dom'
-import BotDemo    from './pages/BotDemo'
-import Dashboard  from './pages/Dashboard'
-import BizPlan    from './pages/BizPlan'
-import Setup      from './pages/Setup'
-import NavBar     from './components/NavBar'
+import Landing         from './pages/Landing'
+import Admin           from './pages/Admin'
+import SchoolBotDemo   from './pages/SchoolBotDemo'
+import SchoolLeads     from './pages/SchoolLeads'
+import SchoolInfo      from './pages/SchoolInfoDynamic'
 
 export default function App() {
   return (
-    <div style={{ minHeight: '100vh', background: '#f0f2f5' }}>
-      <NavBar />
-      <Routes>
-        <Route path="/"          element={<BotDemo />}   />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/bizplan"   element={<BizPlan />}   />
-        <Route path="/setup"     element={<Setup />}     />
-      </Routes>
-    </div>
+    <Routes>
+      {/* Public marketing page — askshule.com */}
+      <Route path="/" element={<Landing />} />
+
+      {/* Owner-only admin dashboard — askshule.com/admin */}
+      <Route path="/admin" element={<Admin />} />
+
+      {/* Per-school dashboards — askshule.com/school/<slug> */}
+      <Route path="/school/:slug"        element={<SchoolBotDemo />} />
+      <Route path="/school/:slug/leads"  element={<SchoolLeads />} />
+      <Route path="/school/:slug/info"   element={<SchoolInfo />} />
+    </Routes>
   )
 }
