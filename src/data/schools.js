@@ -1,4 +1,5 @@
  // ═══════════════════════════════════════════════════════════════════════════
+//Updated: July 2026
 //  ASKSHULE — SCHOOLS DATABASE
 // ═══════════════════════════════════════════════════════════════════════════
 //  This is the ONLY file you need to edit to onboard a new school.
