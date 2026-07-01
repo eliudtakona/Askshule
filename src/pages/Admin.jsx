@@ -94,3 +94,6 @@ export default function Admin() {
             style={{
               background: '#fff', borderRadius: 12, padding: '12px 14px', marginBottom: 8,
               border: '0.5px solid #E2E8F0',
+              </div>
+  )
+}
