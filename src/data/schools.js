@@ -1,8 +1,8 @@
-// ═══════════════════════════════════════════════════════════════════════════
+ // ═══════════════════════════════════════════════════════════════════════════
 //  ASKSHULE — SCHOOLS DATABASE
 // ═══════════════════════════════════════════════════════════════════════════
 //  This is the ONLY file you need to edit to onboard a new school.
-//  Copy the Grove Creek School block below, paste it, change the values,
+//  Copy the Groove Creek School block below, paste it, change the values,
 //  and the new school is instantly live at:
 //
 //      askshule.com/school/<slug>
@@ -13,10 +13,10 @@
 
 export const SCHOOLS = {
 
-  // ── Grove Creek School ──────────────────────────────────────────────────
-  "grove-creek": {
-    slug: "grove-creek",
-    name: "Grove Creek School",
+  // ── Groove Creek School ──────────────────────────────────────────────────
+  "groove-creek": {
+    slug: "groove-creek",
+    name: "Groove Creek School",
     location: "Narok Town, Narok County",
     whatsappNumber: "254708908098",          // digits only, no + or spaces
     whatsappDisplay: "+254 708 908 098",
